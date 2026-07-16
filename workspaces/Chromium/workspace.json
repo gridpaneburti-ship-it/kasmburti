@@ -1,7 +1,7 @@
 {
   "description": "Chromium is a free and open-source browser, primarily developed and maintained by Google.",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "chromium.png",
+  "image_src": "chromium.svg",
   "run_config": {
     "hostname": "kasm"
   },

@@ -1,7 +1,7 @@
 {
   "description": "Red Hat Enterprise Linux is a commercial Linux distribution developed by Red Hat, designed for enterprise use with long-term support.",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "rhel.png",
+  "image_src": "rhel.svg",
   "categories": [
     "Operating System",
     "Enterprise",

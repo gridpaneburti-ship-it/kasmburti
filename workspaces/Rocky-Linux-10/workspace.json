@@ -1,7 +1,7 @@
 {
   "friendly_name": "Rocky Linux 10 KDE",
   "description": "Rocky Linux 10 with KDE Plasma desktop environment for Kasm Workspaces",
-  "image_src": "rocky-linux-10.png",
+  "image_src": "rockylinux.svg",
   "architecture": [
     "amd64",
     "arm64"

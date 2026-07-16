@@ -1,7 +1,7 @@
 {
   "description": "Ubuntu is a popular Linux distribution based on Debian, known for its ease of use and extensive software repository.",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "ubuntu.png",
+  "image_src": "ubuntu.svg",
   "categories": [
     "Operating System",
     "Development"
