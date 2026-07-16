@@ -1,26 +1,40 @@
-name: Build
+name: Build and Deploy
 
 on:
   push:
     branches-ignore:
       - 'gh-pages'
+  workflow_dispatch:
+
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
-      - name: Build # Have to run processing first so the list.json exists to be included in the the deploy
+      - name: Build # Have to run processing first so the list.json exists
         run: |
-          npm ci --prefix processing 
+          npm ci --prefix processing
           npm ci --prefix site
           ./build_all_branches.sh
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          branch: gh-pages
-          folder: public
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Create GitHub Pages URL
+        run: |
+          echo "📍 URL: ${{ steps.deployment.outputs.page_url }}"
+        shell: bash
