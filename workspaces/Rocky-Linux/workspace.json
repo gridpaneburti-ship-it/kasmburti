@@ -14,7 +14,7 @@
   ],
   "compatibility": [
     {
-      "version": "1.16.x",
+      "version": "1.19.x",
       "image": "rockylinux:9",
       "uncompressed_size_mb": 2500,
       "available_tags": [
