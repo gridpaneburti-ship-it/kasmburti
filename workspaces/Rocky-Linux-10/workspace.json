@@ -1,0 +1,22 @@
+{
+  "friendly_name": "Rocky Linux 10 KDE",
+  "description": "Rocky Linux 10 with KDE Plasma desktop environment for Kasm Workspaces",
+  "image_src": "rocky-linux-10.png",
+  "architecture": ["amd64", "arm64"],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "kasmurti/rocky-linux-10-kde",
+      "uncompressed_size_mb": 10500,
+      "available_tags": ["10", "latest"]
+    }
+  ],
+  "categories": ["Operating System", "Development"],
+  "docker_registry": "https://index.docker.io/v1/",
+  "run_config": {
+    "environment": [
+      {"name": "DISPLAY", "value": "${KASM_DISPLAY}"}
+    ],
+    "privileged": false
+  }
+}
