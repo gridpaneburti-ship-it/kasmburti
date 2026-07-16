@@ -1,0 +1,41 @@
+{
+  "description": "Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux.",
+  "docker_registry": "https://index.docker.io/v1/",
+  "image_src": "rocky-linux.png",
+  "categories": [
+    "Operating System",
+    "Enterprise",
+    "Server"
+  ],
+  "friendly_name": "Rocky Linux",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "rockylinux:9",
+      "uncompressed_size_mb": 2500,
+      "available_tags": [
+        "9",
+        "8",
+        "latest"
+      ]
+    }
+  ],
+  "run_config": {
+    "environment": [
+      {
+        "name": "DISPLAY",
+        "value": "${KASM_DISPLAY}"
+      }
+    ],
+    "privileged": false
+  },
+  "exec_config": {
+    "working_dir": "/home/kasm-user"
+  },
+  "cores": 2,
+  "memory": 4096
+}
