@@ -1,0 +1,38 @@
+{
+  "description": "EndeavourOS is a rolling release Linux distribution based on Arch Linux. This workspace features an Arch-based foundation with the KDE Plasma desktop environment.",
+  "docker_registry": "https://index.docker.io/v1/",
+  "image_src": "endeavouros.svg",
+  "categories": [
+    "Operating System"
+  ],
+  "friendly_name": "EndeavourOS",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "archlinux:latest",
+      "uncompressed_size_mb": 3500,
+      "available_tags": [
+        "latest",
+        "rolling",
+        "develop"
+      ]
+    }
+  ],
+  "run_config": {
+    "environment": [
+      {
+        "name": "DISPLAY",
+        "value": "${KASM_DISPLAY}"
+      }
+    ],
+    "privileged": false
+  },
+  "exec_config": {
+    "working_dir": "/home/kasm-user"
+  },
+  "cores": 2,
+  "memory": 4096
+}
