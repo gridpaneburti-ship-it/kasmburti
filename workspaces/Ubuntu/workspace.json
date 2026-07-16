@@ -19,7 +19,8 @@
       "available_tags": [
         "22.04",
         "20.04",
-        "latest"
+        "latest",
+        "develop"
       ]
     }
   ],

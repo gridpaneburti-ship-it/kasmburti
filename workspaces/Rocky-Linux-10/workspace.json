@@ -13,7 +13,8 @@
       "uncompressed_size_mb": 10500,
       "available_tags": [
         "10",
-        "latest"
+        "latest",
+        "develop"
       ]
     }
   ],
