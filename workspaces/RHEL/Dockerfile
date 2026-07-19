@@ -1,4 +1,4 @@
-FROM kasmweb/core-almalinux-9:develop
+FROM kasmweb/rhel-9-desktop:1.19.0-rolling-daily
 
 USER root
 ENV HOME=/home/kasm-default-profile
