@@ -38,6 +38,6 @@
     "working_dir": "/home/kasm-user"
   },
   "cores": 2,
-  "memory": 4096,
+  "memory_bytes": 2902458368
   "notes": "Red Hat Universal Base Image (UBI) provides a free-to-use container base image with enterprise-grade security and long-term support."
 }
