@@ -38,5 +38,5 @@
     "working_dir": "/home/kasm-user"
   },
   "cores": 2,
-  "memory": 4096
+  "memory_bytes": 2902458368
 }
